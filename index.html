@@ -3,60 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 1: Facebook</title>
+    <title>Exercise 2: Image Searching Website</title>
     <style>
-        .container {
-            width: 600px;
-            padding: 20px;
-            border: 1px solid #ccc;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        .facebook-logo {
-            color: #3b5998;
-            font-size: 40px;
-            font-weight: bold;
+        .search-container {
+            margin-bottom: 20px;
         }
-        .form-group {
-            margin: 10px 0;
+        .feedback-form {
+            margin-top: 20px;
         }
-        input[type="text"] {
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        input[type="text"], input[type="date"] {
             width: 200px;
             padding: 5px;
-        }
-        .signup-btn {
-            padding: 5px 15px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Exercise 1: Facebook</h1>
-        
-        <div class="facebook-logo">f</div>
-        
-        <p>Facebook, Inc. is an American online social media and social networking service company.<br>
-        It is based in Menlo Park, California.</p>
-        
+    <h1>Exercise 2: Image Searching Website</h1>
+
+    <div class="search-container">
+        Search your Image here: 
+        <input type="text" value="Kung Fu Panda" />
+        <button>Search</button>
+    </div>
+
+    <img src="Po.webp" alt="Kung Fu Panda" width="300" />
+    
+    <div>
+        <a href="#" style="color: purple;">For more click here</a>
+    </div>
+
+    <div class="feedback-form">
+        <h3>Feedback Form:</h3>
         <form>
-            <div class="form-group">
-                <label>Name:</label><br>
-                <input type="text" placeholder="Enter your Name">
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
             </div>
-            
-            <div class="form-group">
-                <label>Age:</label><br>
-                <input type="text">
+            <div>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" placeholder="mm/dd/yyyy">
             </div>
-            
-            <div class="form-group">
-                <label>Gender:</label><br>
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female"> Female
+            <div>
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment"></textarea>
             </div>
-            
-            <input type="button" value="Signup" class="signup-btn">
+            <div>
+                <button type="submit">Submit</button>
+            </div>
         </form>
-        
-        <p><a href="#">For more click here</a></p>
     </div>
 </body>
 </html>
