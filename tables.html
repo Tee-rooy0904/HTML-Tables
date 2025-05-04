@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .facebook-logo {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        .description {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise 1: Facebook</h1>
+        
+        <img src="facebook-logo.png" alt="Facebook Logo" class="facebook-logo">
+        
+        <div class="description">
+            Facebook, Inc. is an American online social media and social networking service company. 
+            It is based in Menlo Park, California.
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <div>
+            <a href="#" style="color: purple;">For more click here</a>
+        </div>
+    </div>
+</body>
+</html>
